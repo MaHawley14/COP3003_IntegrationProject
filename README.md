@@ -2,7 +2,7 @@
 
 Project Choice: Blazor App
 
-Deployment: 
+Deployment: https://mango-ocean-0f447e910.azurestaticapps.net
 
 Inheritance: Mechanism of basing an object or class upon another object (prototype-based) or class (class-based), retaining similar implementation.
 
