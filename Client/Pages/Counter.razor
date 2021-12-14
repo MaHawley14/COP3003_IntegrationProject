@@ -1,16 +1,30 @@
 ﻿@page "/counter"
 
+<!-- Title -->
 <h1>Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<!-- Type a number ///////////////// NEW /////////////////
+<p>Count by </p>
+<input @bind="InputCount " /> -->
 
+<!-- Display for the count -->
+<p>Current count: @currentCount</p>
+
+<!-- Button which adds to the counter -->
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<!-- Gets & Applies the counter calculation -->
 @code {
     private int currentCount = 0;
 
+    <!-- //////////// NEW /////////////
+    public int InputCount { get; set; } -->
+
+    [Parameter]
+    public int IncrementAmount { get; set; } = InputCount;
+
     private void IncrementCount()
     {
-        currentCount++;
+        currentCount += IncrementAmount;
     }
 }

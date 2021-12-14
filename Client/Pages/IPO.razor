@@ -1,0 +1,36 @@
+﻿@page "/ipo"
+
+<!-- Page Header -->
+<h1>IPO</h1>
+
+<!-- Type a number -->
+<p>Input prompt </p>
+<input @bind="InputString " />
+
+<!-- Button sends number to the calculation -->
+<button class="btn btn-primary" @onclick="DoProcessing">Do it</button>
+
+<!-- View the double of the original number -->
+<p>Output: @OutputString </p>
+
+@code
+
+{
+
+    private string InputString { get; set; }
+
+    private string OutputString { get; set; }
+
+    private void DoProcessing()
+
+    {
+
+        double num = double.Parse(InputString);
+
+        num = num * 2;
+
+        OutputString = num.ToString();
+
+    }
+
+}

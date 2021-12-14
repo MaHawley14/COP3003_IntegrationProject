@@ -1,11 +1,12 @@
 ﻿@page "/fetchdata"
-@using BlazorApp.Shared 
+@using BlazorApp.Shared
 @inject HttpClient Http
 
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
 
+<!-- Shows a loading screen -->
 @if (forecasts == null)
 {
     <p><em>Loading...</em></p>
@@ -35,14 +36,15 @@ else
     </table>
 }
 
+<!-- Calls the weather forecast to display it -->
 @code {
-    private WeatherForecast[] forecasts = new WeatherForecast[]{};
+    private WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("/api/WeatherForecast") ?? new WeatherForecast[]{};
+            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("/api/WeatherForecast");
         }
         catch (Exception ex)
         {
