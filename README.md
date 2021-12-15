@@ -27,7 +27,9 @@ Matthew Hawley
 
 ## Acknowledgments
 Visual Studio 2019
+
 Github
+
 Microsoft Azure
 
 ## History
