@@ -14,7 +14,9 @@
 
 
 ## Built With
-
+* Visual Studio 2019
+* Github
+* Microsoft Azure
 
 ## Contributing
 
