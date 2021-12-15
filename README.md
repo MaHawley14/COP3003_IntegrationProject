@@ -22,17 +22,15 @@
 
 
 ## Author
-Matthew Hawley
+* Matthew Hawley
 
 ## License
 
 
 ## Acknowledgments
-Visual Studio 2019
-
-Github
-
-Microsoft Azure
+* Visual Studio 2019
+* Github
+* Microsoft Azure
 
 ## History
 
