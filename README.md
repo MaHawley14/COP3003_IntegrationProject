@@ -14,9 +14,10 @@
 
 
 ## Built With
+* Microsoft .NET Blazor Tutorial
 * Visual Studio 2019
-* Github
 * Microsoft Azure
+* Github
 
 ## Contributing
 
@@ -28,10 +29,11 @@
 
 
 ## Acknowledgments
-* Visual Studio 2019
-* Github
-* Microsoft Azure
 * Professor Scott Vanselow
+* Visual Studio 2019
+* Microsoft Azure
+* Github
+
 
 ## History
 
