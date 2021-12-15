@@ -31,6 +31,7 @@
 * Visual Studio 2019
 * Github
 * Microsoft Azure
+* Professor Scott Vanselow
 
 ## History
 
